@@ -78,5 +78,28 @@ body{
 }
 
 
+/* ================== ESTILOS PARA SERVICIOS ================== */
 
+.servicios-hero {
+  background: linear-gradient(180deg, rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+              url('../img/servicios-hero.jpg') center/cover no-repeat;
+  min-height: 260px;
+}
+
+.titulo-servicio {
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  border-left: 6px solid var(--brand-yellow);
+  padding-left: 12px;
+}
+
+.servicio-foto {
+  height: 250px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 6px;
+  border: 5px solid #000;
+
+}
 
