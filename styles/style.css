@@ -103,3 +103,60 @@ body{
 
 }
 
+
+
+/* ---------- Topbar ---------- */
+.topbar{
+  background:#111;
+  color:#fff;
+  font-size:0.9rem;
+}
+
+/* ---------- Hero con imagen de fondo que abarca hasta Misión/Visión ---------- */
+.sobre-nosotros-hero{
+  background-image: url('../img/fondo-nosotros.jpg'); /* <- pon aquí tu imagen */
+  background-size: cover;
+  background-position: center;
+  min-height: 380px;
+  display:flex;
+  align-items:center;
+  color:#fff;
+  position: relative;
+}
+
+.sobre-nosotros-hero .overlay{
+  background: linear-gradient(0deg, rgba(0,0,0,0.55), rgba(0,0,0,0.35));
+  padding: 30px;
+  border-radius: 8px;
+}
+
+/* tarjetas translúcidas dentro del hero */
+.card-translucent{
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.08);
+  color: #fff;
+}
+
+/* Equipo */
+.equipo-card{
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #e7e7e7;
+}
+
+.equipo-foto{
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #000; /* contorno negro pequeño como pediste */
+}
+
+/* Ajustes de texto en hero para tamaños pequeños */
+@media (max-width: 767px){
+  .sobre-nosotros-hero{
+    min-height: 420px;
+    padding: 30px 0;
+  }
+  .sobre-nosotros-hero .overlay{ padding:20px; }
+}
